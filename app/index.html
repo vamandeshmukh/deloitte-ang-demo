@@ -1,48 +1,19 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
-
-<head>     
-  <meta charset="utf-8">
-  <title>Google Phone Gallery</title>
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="app.css" />
-  <script src="lib/angular/angular.js"></script>
-  <script src="app.js"></script>
-</head>
-
-<body ng-controller="MyAppController">
-  <ul>
-    <li ng-repeat="app in apps">
-      <span>{{app.appName}}</span>
-      <p>{{app.appVersion}}</p>
-    </li>
-  </ul>
-  <p> {{companyName}} </p>
-  <p> Print 'Hyderabad' here</p>
-</body>
-
-</html>
-
-
-<!-- <!doctype html>
 <html lang="en" ng-app="phonecatApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Phone Gallery</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="lib/angular/angular.js"></script>
+    <script src="app.module.js"></script>
+    <script src="phone-list/phone-list.module.js"></script>
+    <script src="phone-list/phone-list.component.js"></script>
+  </head>
+  <body>
 
-<head>
-  <meta charset="utf-8">
-  <title>Google Phone Gallery</title>
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="app.css" />
-  <script src="lib/angular/angular.js"></script>
-  <script src="app.js"></script>
-</head>
+    <!-- Use a custom component to render a list of phones -->
+    <phone-list></phone-list>
 
-<body ng-controller="PhoneListController">
-    <ul>
-      <li ng-repeat="phone in phones">
-        <span>{{phone.name}}</span>
-        <p>{{phone.snippet}}</p>
-      </li>
-    </ul>
   </body>
-
-</html> -->
+</html>
