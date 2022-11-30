@@ -1,21 +1,33 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
-  <head>
-    <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="app.css" />
-    <script src="lib/angular/angular.js"></script>
-    <script src="app.js"></script>
-  </head>
-  <body ng-controller="PhoneListController">
+<!-- <html lang="en" ng-app="phonecatApp"> -->
+  <html lang="en" ng-app="myApp">
 
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="app.css" />
+  <script src="lib/angular/angular.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MyAppController">
+  <ul>
+    <li ng-repeat="app in apps">
+      <span>{{app.appName}}</span>
+      <p>{{app.appVersion}}</p>
+    </li>
+  </ul>
+</body>
+
+<!-- <body ng-controller="PhoneListController">
     <ul>
       <li ng-repeat="phone in phones">
         <span>{{phone.name}}</span>
         <p>{{phone.snippet}}</p>
       </li>
     </ul>
+  </body> -->
 
-  </body>
+
 </html>
